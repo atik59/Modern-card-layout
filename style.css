@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-color: #D9ECF2;
+}
+.parent {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 40px;
+}
+
+div > div{
+    border-radius: 20px;
+    box-shadow: 0 16px 20px rgb(88, 88, 88);
+    padding: 40px;
+    color: white;
+}
+.div1 {
+    grid-area: 3 / 2 / 5 / 3;
+    background-color: #F56A79;
+    border-top: 5px solid #002D40;
+}
+
+.div1:hover{
+    cursor: pointer;
+    background-color: #002D40;
+    transition: 0.5s;
+}
+.div2 { 
+    grid-area: 2 / 3 / 4 / 4; 
+    background-color: #1AA6B7;
+    border-top: 5px solid #F56A79;
+}
+.div2:hover{
+    cursor: pointer;
+    background-color: #F56A79;
+    transition: 0.5s;
+}
+
+.div3 { 
+    grid-area: 3 / 4 / 5 / 5; 
+    background-color: #002D40;
+    border-top: 5px solid #FF414D;
+}
+
+.div3:hover{
+    cursor: pointer;
+    background-color: #FF414D;
+    transition: 0.5s;
+}
+
+.div4 { 
+    grid-area: 4 / 3 / 6 / 4;
+    background-color: #FF414D;
+    border-top: 5px solid #1AA6B7; 
+}
+
+.div4:hover{
+    cursor: pointer;
+    background-color: #1AA6B7;
+    transition: 0.5s;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+        .parent {
+            margin-top: 20vh;
+            min-height: 30vh;
+            display: grid;
+            grid-gap: 20px;
+        }
+ }
+ 
